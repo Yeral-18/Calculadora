@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #D8FFFA;
+}
+
+.calculadora{  
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 50px;
+    
+   
+    
+}
+
+.calculadora-display{
+    display: grid;
+    justify-content: center;
+    width: 550px;
+    height: 700px;
+    overflow: hidden;
+    padding: 50px;
+    border: solid 4px #440495;
+    border-radius: 50px;
+    background-color: #B858FF;
+    -webkit-box-shadow: 17px 15px 5px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 17px 15px 5px 0px rgba(0,0,0,0.66);
+    box-shadow: 17px 15px 5px 0px rgba(0,0,0,0.66);
+    box-shadow: -5px 2px 64px 18px rgba(92,54,245,0.75) inset;
+    -webkit-box-shadow: -5px 2px 64px 18px rgba(92,54,245,0.75) inset;
+    -moz-box-shadow: -5px 2px 64px 18px rgba(92,54,245,0.75) inset;
+    
+}
+.calculadora-valor{
+    
+    height: 130px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #FFF7C4;
+    border: solid 3px #2B035F;
+    color: #000000;
+    font-weight: 700;
+    text-align: right;
+    padding: 20px;
+    font-size: 60px;
+    
+}
+
+.div-botones{
+    display: grid;
+    grid-template-columns: repeat(4, 110px);
+    grid-template-rows: repeat(5, 75px);
+    grid-gap: 5px;
+    border-radius: 20px;
+}
+
+.calculadora-buttons{
+    cursor: pointer;
+    background-color: #C4D7FF;
+    border-radius: 20px;
+    font-size: 30px;
+    border: solid 3px #000000;
+
+}
+
+.calculadora-buttons:hover{
+    background-color: #8b99b6;
+}
+
+.button-operador{
+    border-radius: 20px;
+    background-color: #915DFF;
+    border: solid 3px #000000;
+    font-weight: 700;
+}
+
+.button-operador:hover{
+    background-color: #5f3fa3;
+}
+
+.button-borrarTodo{
+    grid-column: 1 / 3;
+    border-radius: 20px;
+    background-color: #FF3759;
+    border: solid 3px #000000;
+    font-weight: 700;
+}
+
+.button-borrarTodo:hover{
+    background-color: #f81138;
+}
+
+.button-borrar{
+    border-radius: 20px;
+    background-color: #FF5D78;
+    border: solid 3px #000000;
+    font-weight: 700;
+}
+
+.button-borrar:hover{
+    background-color: #fc294c;
+}
+
+.cero{
+    grid-column: 1 / 3;
+}
+
+footer{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    font-size: 23px;
+}
+
+footer img{
+    width: 3em;
+}
